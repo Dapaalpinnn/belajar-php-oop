@@ -1,23 +1,26 @@
 <?php 
 
 require_once "24_Trait.php";
-use Data\Traits\{sayGoodBye, sayHello, hasName};
+
+use myTraits\hasName;
 
 // Trait abstract function.
 trait canRun {
-    public abstract function run() :void ;
+    public abstract function run(): void ;
 }
 
-class Person {
-    use sayGoodBye, sayHello, hasName, canRun;
+class myPerson {
     // Trait abstract function wajib di override.
     public function run() :void {
-        echo "Query Overide Function: Person $this->name is Good" . PHP_EOL;
+        echo "The person is running" . PHP_EOL;
     }
 }
 
-$run = new Person();
-$run->name = "Muhammad Dafa";
+$run = new myPerson();
 $run->run();
+
+
+// Di parent akan ter-overide oleh traits
+// Si trait akan ter-overide oleh class
 
 ?>

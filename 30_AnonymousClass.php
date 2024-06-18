@@ -3,12 +3,12 @@
 /*                               Abstract Class                               */
 /* -------------------------------------------------------------------------- */
 
-// Bisa langsung membuat oject.
 
 interface HelloWorld {
     public function sayHello($name, $message) :void;  
 }
 
+// Membuat class sekaligus objectnya secara langsung.
 $helloWorld = new class implements HelloWorld {
     public function sayHello($name, $message = "Good Evening") :void {
         echo "Welcome to The Office $name, $message" . PHP_EOL;

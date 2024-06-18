@@ -1,14 +1,28 @@
 <?php 
 
-require_once "data/Shape.php";
+class learnShape {
+    public function parentShape() :int {
+        return 10;
+    }
+}
 
-use Data\{Shape, Rectangle};
+class childShape extends learnShape {
+    // Overide function parentShape 
+    public function parentShape() :int {
+        return 4;
+    }
+    // Akses function parentShape
+    public function getParentShape() :int {
+        return parent::parentShape();
+    }
+}
 
-$shape = new Shape();
-echo $shape -> getCorner() . PHP_EOL; // -1
+// Mendapatkan value 
+$value = new learnShape();
+echo "Result dari class learnShape: " . $value->parentShape() . PHP_EOL;
 
-$rectangle = new Rectangle();
-echo $rectangle -> getCorner() . PHP_EOL; // 4
-echo $rectangle -> getParentCorner() . PHP_EOL; // -1
+$value = new childShape();
+echo "Result dari class childShape: " . $value->parentShape()  . PHP_EOL;
+echo "Akses function parent: " . $value->getParentShape() . PHP_EOL;
 
 ?>

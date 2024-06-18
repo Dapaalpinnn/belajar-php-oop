@@ -2,18 +2,18 @@
 
 trait A {
     public function doA() :void {
-        echo "a" . PHP_EOL;
+        echo "Ini function A pada trait A" . PHP_EOL;
     }
     public  function doB() :void {
-        echo "b" . PHP_EOL;    
+        echo "Ini function B pada trait A" . PHP_EOL;    
     }
 }
 trait B {
     public function doA() :void {
-        echo "My Trait Function do A" . PHP_EOL;
+        echo "My Trait B Function do A" . PHP_EOL;
     }
     public  function doB() :void {
-        echo "My Trait Function do B" . PHP_EOL;    
+        echo "My Trait B Function do B" . PHP_EOL;    
     }
 }
 

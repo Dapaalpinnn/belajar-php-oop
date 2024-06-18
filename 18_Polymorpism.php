@@ -1,6 +1,5 @@
 <?php 
 
-
 class Programmer {
     public string $name;
     public function __construct(string $name){
@@ -30,11 +29,12 @@ $company = new Company();
 $company -> programmer = new Programmer("Programmer");
 var_dump($company);
 
-$company -> programmer = new FrontendProgrammer("FrontendProgrammer");
+$company -> programmer = new FrontendProgrammer("Frontend Programmer");
 var_dump($company);
 
-$company -> programmer = new BackendProgrammer("BackendProgrammer");
+$company -> programmer = new BackendProgrammer("Backend Programmer");
 var_dump($company);
+
 
 /* -------------------------------------------------------------------------- */
 /*                       Function Argument Polymorphism                       */
@@ -46,9 +46,7 @@ function sayHelloProgrammer(programmer $programmer){
 
 // Kita bisa menggunakan turunannya.
 sayHelloProgrammer(new programmer("John"));
-sayHelloProgrammer(new FrontendProgrammer("John"));
-sayHelloProgrammer(new BackendProgrammer("John"));
-
-// Kemampuan sebuah properti atau data bisa berubah tipe data (Biasa di set dari tipe data parentnya)
+sayHelloProgrammer(new FrontendProgrammer("Michael"));
+sayHelloProgrammer(new BackendProgrammer("Samuel"));
 
 ?>

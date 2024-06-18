@@ -16,7 +16,7 @@ final public function Login(string $username, string $password) :bool {
 }
 }
 
-// Error
+// ERRORRRRRRR!!!
 // class FakeFacebook extends Facebook {
 // final public function Login(string $username, string $password) : bool {
 //     return false;

@@ -3,7 +3,7 @@
 require_once "24_Trait.php";
 require_once "25_TraitOverriding.php";
 
-use Data\Traits\{sayGoodBye, sayHello, hasName};
+use myTraits\{sayGoodBye, sayHello, hasName};
 
 // Include trait lain.
 trait All{
