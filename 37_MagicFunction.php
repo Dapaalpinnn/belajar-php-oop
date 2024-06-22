@@ -23,7 +23,8 @@ class theStudent {
             "Id" => $this->id,
             "Value" => $this->value,
             "Activity" => "Belajar PHP OOP",
-            "Version" => "1.0.7"
+            "Version" => "1.0.7",
+            "Date" => "20 June 2024"
         ];
     }
 }
@@ -42,22 +43,18 @@ echo "TO STRING" . PHP_EOL;
 $string = (string) $siswa;
 echo $string . PHP_EOL;
 
-// Bisa seperti ini.
-echo $siswa . PHP_EOL;
-
 /* -------------------------------------------------------------------------- */
 /*                                   Invoke                                   */
 /* -------------------------------------------------------------------------- */
 
 echo "INVOKE" . PHP_EOL;
 // Variable akan dianggap sebagai function.
-$siswa(1, "Hello", true, 123);
+$siswa("Samuel", 100, true);
 
 /* -------------------------------------------------------------------------- */
 /*                                 Debug Info                                 */
 /* -------------------------------------------------------------------------- */
 
 echo "DEBUG INFO" . PHP_EOL;
-var_dump($siswa);
-
+print_r($siswa);
 ?>

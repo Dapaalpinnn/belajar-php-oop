@@ -5,13 +5,13 @@
 /* -------------------------------------------------------------------------- */
 
 class PropertyType{
-    // Menambahkan Type Declaration setelah kata kunci var.
+    // Type Data Declaration, setelah kata kunci var.
     var string $nama;
     var int $nim;
     var string $programStudi;
-    // Menambahkan Nullable properties "?", artinya properties tersebut bisa null
+    // Nullable properties "?", artinya properties tersebut bisa null
     var ?string $alamat; 
-    // Menambahkan Default Value
+    // Default Value
     var string $perguruanTinggi = "Universitas Negeri Surabaya";
 }
 

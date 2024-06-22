@@ -4,30 +4,32 @@ require_once "data/Mahasiswa.php";
 require_once "data/Helper.php";
 
 // Menggunakan Alias
-use Data\One\Mahasiswa as Mahasiswa1;
-use Data\One\Ayah as dataAyah;
-use Data\One\Ibu as dataIbu;
+use Data\One\Mahasiswa;
+use Data\One\Ayah as DataAyah;
+use Data\One\Ibu as DataIbu;
 use function Helper\Welcome;
+use function Helper\sayHello;
 use const Helper\APPLICATION as APP;
 
 // Mengakses Namespace
-$mahasiswa = new Mahasiswa1();
+$mahasiswa = new Mahasiswa();
 $mahasiswa -> nama = "Dafa Alvin";
 $mahasiswa -> nim = 275271;
 $mahasiswa -> jurusan = "Teknik Informatika";
-$mahasiswa -> sayMahasiswa(null);
+$mahasiswa -> sayMahasiswa();
 
-$ibu = new dataIbu();
+$ibu = new DataIbu();
 $ibu -> nama = "Ratna Irawati";
 $ibu -> sayIbu();
 
-$ibu = new dataAyah();
+$ibu = new DataAyah();
 $ibu -> nama = "John Smith";
 $ibu -> sayAyah();
 
 // Mengakses menggunakan alias
 Welcome();
-echo APP . PHP_EOL;
+sayHello();
+echo "Version: ". APP . PHP_EOL;
 
 
 

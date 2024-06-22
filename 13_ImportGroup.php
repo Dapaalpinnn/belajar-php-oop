@@ -11,15 +11,15 @@ $mahasiswa = new Mahasiswa();
 $mahasiswa -> nama = "John Michael";
 $mahasiswa -> nim = 23743746;
 $mahasiswa -> jurusan = "Teknik Informatika";
-$mahasiswa -> sayMahasiswa("John");
+$mahasiswa -> sayMahasiswa();
 
 $ayah = new Ayah();
 $ayah -> nama = "Irwan Setiawan";
-$ayah -> sayAyah("Irwan");
+$ayah -> sayAyah();
 
 $ibu = new Ibu();
 $ibu -> nama = "Ninik Irawati";
-$ibu -> sayIbu("Ninik");
+$ibu -> sayIbu();
 
 // Memanggil function
 Welcome();

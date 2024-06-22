@@ -21,7 +21,7 @@ class FrontendProgrammer extends Programmer{
 
 // Polymorphism => Kemampuan sebuah object berubah bentuk menjadi bentuk lain.
 
-class company {
+class Company {
     public Programmer $programmer;
 }
 

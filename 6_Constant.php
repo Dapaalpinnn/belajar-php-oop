@@ -25,7 +25,7 @@ $visitor1 -> name = "John Doe Smith";
 $visitor1 -> addres = null;
 $visitor1 -> email = "dafaghan@gmail.com";
 $visitor1 -> sayHello("John");
-// Mengakses constant menggunakan class
+// Mengakses constant menggunakan class.
 echo "Author: " . Book :: AUTHOR . PHP_EOL;
 
 $visitor2 = new Book();

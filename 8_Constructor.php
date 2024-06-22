@@ -8,7 +8,6 @@ class Data {
     var string $name;
     var ?string $addres;
     var string $country = "Indonesia";
-    // Membuat Constructor
     function __construct(string $name, ?string $addres){
         $this->name = $name;
         $this->addres = $addres;

@@ -1,14 +1,14 @@
 <?php 
 
 class MyManager {
-    var string $name;
-    var string $tittle;
+    public string $name;
+    public string $tittle;
     public function __construct(string $name = "", $tittle = "Manager"){
         $this -> name = $name;
         $this -> tittle = $tittle;
     }
     public function sayHello($name){
-        echo "Hello $name, my name is Manager {$this->name}" . PHP_EOL;  
+        echo "Hello $name, my name is {$this -> tittle} {$this->name}" . PHP_EOL;  
     }
 }
 
@@ -23,8 +23,8 @@ class MyVicePresident extends MyManager {
 }
  
 $manager = new MyManager();
-$manager -> name = "Rudi";
-$manager -> tittle = "Manager";
+$manager -> name = "Samuel Richardo";
+$manager -> tittle = "Employee";
 $manager -> sayHello("Rudi");
 
 $vp = new MyVicePresident();

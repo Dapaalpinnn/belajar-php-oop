@@ -1,11 +1,11 @@
 <?php 
 
 namespace Helper;
-    const APPLICATION = "Belajar PHP OOP" . PHP_EOL;
+    const APPLICATION = "1.0.76" . PHP_EOL;
     function Welcome(){
         echo "Hi, Welcome to Administrator" . PHP_EOL;
     }
     function sayHello(){
-        echo "Hello World!";
+        echo "This is function sayHello" . PHP_EOL;
     }
 ?>
